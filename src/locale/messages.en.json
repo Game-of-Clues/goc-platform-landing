@@ -1,0 +1,10 @@
+{
+  "locale": "en",
+  "translations": {
+    "title": "It's waiting {$START_TAG_SPAN}just around the corner...{$CLOSE_TAG_SPAN}",
+    "moto": "Your next urban escape game is waiting you just around the corner. Our games in the town of Pazardzhik would dive your team and you in a clue chase for one unforgettable experience.",
+    "ctaButtonText": "Book now",
+    "7141987633814197955": "Кои сме ние?",
+    "heroImageAlt": "Начална снимка"
+  }
+}

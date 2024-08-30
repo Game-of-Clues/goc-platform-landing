@@ -1,0 +1,34 @@
+[debug] [2024-07-17T16:07:22.438Z] ----------------------------------------------------------------------
+[debug] [2024-07-17T16:07:22.459Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\nikis\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2024-07-17T16:07:22.460Z] CLI Version:   11.18.0
+[debug] [2024-07-17T16:07:22.461Z] Platform:      win32
+[debug] [2024-07-17T16:07:22.461Z] Node Version:  v20.9.0
+[debug] [2024-07-17T16:07:22.461Z] Time:          Wed Jul 17 2024 19:07:22 GMT+0300 (Eastern European Summer Time)
+[debug] [2024-07-17T16:07:22.462Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-07-17T16:07:22.630Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-07-17T16:07:22.631Z] > authorizing via signed-in user (nikistoyanov2005@gmail.com)
+[debug] [2024-07-17T16:07:22.632Z] [iam] checking project gameofclues for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-07-17T16:07:22.634Z] > refreshing access token with scopes: []
+[debug] [2024-07-17T16:07:22.638Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-07-17T16:07:22.638Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-07-17T16:07:22.959Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2024-07-17T16:07:22.959Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-07-17T16:07:22.971Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/gameofclues:testIamPermissions [none]
+[debug] [2024-07-17T16:07:22.971Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/gameofclues:testIamPermissions x-goog-quota-user=projects/gameofclues
+[debug] [2024-07-17T16:07:22.972Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/gameofclues:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-07-17T16:07:23.871Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/gameofclues:testIamPermissions 200
+[debug] [2024-07-17T16:07:23.871Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/gameofclues:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-07-17T16:07:23.872Z] >>> [apiv2][query] POST https://iam.googleapis.com/v1/projects/gameofclues/serviceAccounts/gameofclues@appspot.gserviceaccount.com:testIamPermissions [none]
+[debug] [2024-07-17T16:07:23.872Z] >>> [apiv2][body] POST https://iam.googleapis.com/v1/projects/gameofclues/serviceAccounts/gameofclues@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2024-07-17T16:07:24.764Z] <<< [apiv2][status] POST https://iam.googleapis.com/v1/projects/gameofclues/serviceAccounts/gameofclues@appspot.gserviceaccount.com:testIamPermissions 200
+[debug] [2024-07-17T16:07:24.765Z] <<< [apiv2][body] POST https://iam.googleapis.com/v1/projects/gameofclues/serviceAccounts/gameofclues@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2024-07-17T16:07:24.767Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/gameofclues [none]
+[debug] [2024-07-17T16:07:25.255Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/gameofclues 200
+[debug] [2024-07-17T16:07:25.256Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/gameofclues {"projectId":"gameofclues","projectNumber":"1061185340278","displayName":"gameofclues","name":"projects/gameofclues","resources":{"hostingSite":"gameofclues"},"state":"ACTIVE","etag":"1_44e33548-0356-4da0-ad98-e31bb53a705e"}
+[info] 
+[info] === Deploying to 'gameofclues'...
+[info] 
+[info] i  deploying functions, hosting 
+[info] Running command: npm --prefix "$RESOURCE_DIR" run lint
+[info] Running command: npm --prefix "$RESOURCE_DIR" run build

@@ -4,6 +4,12 @@
   "newProjectRoot": "projects",
   "projects": {
     "goc-platform-landing": {
+      "i18n": {
+        "sourceLocale": "bg",
+        "locales": {
+          "en": "src/locale/messages.en.json"
+        }
+      },
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,11 +19,15 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
+            "localize": [
+              "bg"
+            ],
             "outputPath": "dist/goc-platform-landing",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
-              "zone.js"
+              "zone.js",
+              "@angular/localize/init"
             ],
             "tsConfig": "tsconfig.app.json",
             "assets": [
@@ -80,7 +90,8 @@
           "options": {
             "polyfills": [
               "zone.js",
-              "zone.js/testing"
+              "zone.js/testing",
+              "@angular/localize/init"
             ],
             "tsConfig": "tsconfig.spec.json",
             "assets": [
@@ -97,5 +108,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "e59d2dc6-cc59-4457-b098-14ff639d3f09"
   }
 }
