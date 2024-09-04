@@ -51,6 +51,25 @@
   color: #fff;
 }
 
+.language-dropdown {
+  background: none !important;
+  border: none !important;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 0;
+  transition: 0.3s;
+  outline: none;
+  margin-left: 20px;
+}
+
+.language-dropdown option {
+  color: black;
+}
+
+.language-dropdown:focus {
+  outline: none;
+  box-shadow: none;
+}
+
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
