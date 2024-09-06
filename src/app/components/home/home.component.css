@@ -1,0 +1,6 @@
+@media (max-width: 575px) {
+    #reserve-now {
+        margin-right: var(--bs-border-radius-xl) !important;
+        margin-left: var(--bs-border-radius-xl) !important;
+    }
+}
