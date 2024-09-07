@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {RouterLink} from "@angular/router";
+import { RouterLink } from "@angular/router";
 import { HeaderComponent } from '../../shared/header/header.component';
 import { ContactComponent } from "../contact/contact.component";
 import { LastComponent } from '../last/last.component';

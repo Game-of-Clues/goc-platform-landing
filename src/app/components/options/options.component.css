@@ -1,0 +1,14 @@
+.options-header-section {
+    padding-top: 20px;
+    margin-top: 20px;
+    padding-bottom: 0 !important;
+}
+
+#pricing {
+    padding-top: 1rem !important;
+}
+
+.option-heading {
+    font-size: 1.7rem !important;
+    margin-bottom: 30px !important;
+}

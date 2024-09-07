@@ -1466,7 +1466,7 @@ section {
 /*--------------------------------------------------------------
 # Pricing Section
 --------------------------------------------------------------*/
-.pricing .pricing-item {
+.pricing .pricing-item, .options, .options-item {
   padding: 60px 40px;
   box-shadow: 0 3px 20px -2px rgba(108, 117, 125, 0.15);
   background: #fff;
@@ -1474,7 +1474,7 @@ section {
   border-radius: 15px;
 }
 
-.pricing h3 {
+.pricing h3, .options h3 {
   font-weight: 600;
   margin-bottom: 15px;
   font-size: 20px;
@@ -1482,7 +1482,7 @@ section {
   text-align: center;
 }
 
-.pricing .icon {
+.pricing .icon, .options .icon {
   margin: 30px auto 30px auto;
   width: 70px;
   height: 70px;
@@ -1495,14 +1495,14 @@ section {
   transform-style: preserve-3d;
 }
 
-.pricing .icon i {
+.pricing .icon i, .options .icon i {
   color: #fff;
   font-size: 28px;
   transition: ease-in-out 0.3s;
   line-height: 0;
 }
 
-.pricing .icon::before {
+.pricing .icon::before, .options .icon::before {
   position: absolute;
   content: "";
   height: 86px;
@@ -1513,7 +1513,7 @@ section {
   transform: translateZ(-1px);
 }
 
-.pricing .icon::after {
+.pricing .icon::after, .options .icon::after {
   position: absolute;
   content: "";
   height: 102px;
@@ -1524,7 +1524,7 @@ section {
   transform: translateZ(-2px);
 }
 
-.pricing h4 {
+.pricing h4, .options h4 {
   font-size: 48px;
   color: var(--color-secondary);
   font-weight: 700;
@@ -1533,17 +1533,17 @@ section {
   text-align: center;
 }
 
-.pricing h4 sup {
+.pricing h4 sup, .options h4 sup {
   font-size: 28px;
 }
 
-.pricing h4 span {
+.pricing h4 span, .options h4 span {
   color: rgba(108, 117, 125, 0.8);
   font-size: 18px;
   font-weight: 400;
 }
 
-.pricing ul {
+.pricing ul, .options ul {
   padding: 20px 0;
   list-style: none;
   color: #6c757d;
@@ -1575,7 +1575,7 @@ section {
   text-decoration: line-through;
 }
 
-.pricing .buy-btn {
+.pricing .buy-btn, .options .buy-btn {
   display: inline-block;
   padding: 10px 40px;
   border-radius: 50px;
@@ -1588,18 +1588,18 @@ section {
   transition: 0.3s;
 }
 
-.pricing .buy-btn:hover {
+.pricing .buy-btn:hover, .options .buy-btn:hover {
   background: var(--color-primary);
   color: #fff;
 }
 
-.pricing .featured {
+.pricing .featured, .options .featured {
   z-index: 10;
   border: 3px solid var(--color-primary);
 }
 
 @media (min-width: 992px) {
-  .pricing .featured {
+  .pricing .featured, .options .featured {
     transform: scale(1.15);
   }
 }
